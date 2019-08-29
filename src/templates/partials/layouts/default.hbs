@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example - {{title}}</title>
+  {{#block "head"}}
+    <link rel="stylesheet" href="styles/app.css">
+  {{/block}}
+</head>
+<body>
+  {{> header}}
+  <main>
+    {{#block "body"}}
+
+    {{/block}}
+  </main>
+  {{#block "foot"}}
+    <script async src="scripts/app.js"></script>
+  {{/block}}
+</body>
+</html>
